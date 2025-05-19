@@ -597,6 +597,7 @@ nav {
     text-align: center;
     opacity: 0.9;
     line-height: 1.4;
+    color: var(--white);
 }
 
 .whatwedo-title {
