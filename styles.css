@@ -1683,3 +1683,17 @@ footer {
     background-color: var(--soft-warm-rose);
     color: var(--white);
 }
+
+/* Navigation fix */
+@media (min-width: 768px) {
+    .main-nav {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+    .main-nav li {
+        margin: 0.5rem 0.15rem !important;
+    }
+    nav, .container, .header-content {
+        max-width: 100% !important;
+    }
+}
