@@ -1684,16 +1684,30 @@ footer {
     color: var(--white);
 }
 
-/* Navigation fix */
+/* Navigation fix - CORRECTED */
 @media (min-width: 768px) {
-    .main-nav {
+    nav[role="navigation"] {
         display: flex !important;
         flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        width: 100% !important;
     }
-    .main-nav li {
-        margin: 0.5rem 0.15rem !important;
+    
+    nav[role="navigation"] ul {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    nav, .container, .header-content {
-        max-width: 100% !important;
+    
+    .nav-link {
+        white-space: nowrap !important;
+        padding: 0.5rem 0.3rem !important;
+    }
+    
+    nav li {
+        display: inline-block !important;
+        margin: 0 !important;
     }
 }
