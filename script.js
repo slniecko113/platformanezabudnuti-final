@@ -960,3 +960,16 @@ window.scrollToAbout = scrollToAbout;
 window.submitNewsletter = submitNewsletter;
 window.toggleFAQ = toggleFAQ;
 window.toggleEvent = toggleEvent;
+
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.btn-primary[onclick*="showBAN"]');
+    const nav = document.querySelector('nav[role="navigation"]');
+    
+    if (menuButton && nav) {
+        menuButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            nav.classList.toggle('active');
+        });
+    }
+});
