@@ -424,7 +424,11 @@ header {
 .logo-container {
     flex-shrink: 0;
 }
-
+.logo-container img {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
 .logo-image {
     height: 60px;
     border-radius: 8px;
