@@ -1705,19 +1705,24 @@ footer {
         white-space: nowrap !important;
         padding: 0.5rem 0.3rem !important;
     }
-
-    /* Mobile menu improvements */
+/* Mobile menu - hide by default, show only when active */
 @media (max-width: 767px) {
-    nav[role="navigation"] {
-        padding: 1rem;
+    /* Hide the navigation list by default on mobile */
+    nav[role="navigation"] ul {
+        display: none !important;
     }
     
-    nav[role="navigation"] ul {
+    /* Show navigation when menu is active/open */
+    nav[role="navigation"].active ul,
+    nav[role="navigation"].show ul,
+    nav[role="navigation"].open ul {
+        display: flex !important;
         flex-direction: column !important;
         align-items: flex-start !important;
         width: 100%;
     }
     
+    /* Keep the rest of mobile styles */
     .nav-link {
         display: block !important;
         padding: 0.75rem 0 !important;
@@ -1725,13 +1730,8 @@ footer {
         font-size: 1.1rem;
     }
     
-    /* Better spacing for language toggle on mobile */
     .nav-actions {
         margin-top: 1rem;
     }
 }
-    nav li {
-        display: inline-block !important;
-        margin: 0 !important;
-    }
-}
+   
