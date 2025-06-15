@@ -1394,7 +1394,7 @@ footer {
     
     .main-nav {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-between;
         gap: 0.5rem;
     }
     
