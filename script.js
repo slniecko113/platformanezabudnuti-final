@@ -1,4 +1,3 @@
-/**
  * nezabudnutí. - Platform of Helping Organizations
  * JavaScript functionality for bilingual website
  * @version 1.0.0
@@ -22,7 +21,7 @@ const translations = {
         },
         // Hero section
         hero: {
-            title: "Spájame a ochraňujeme tých, ktorí robia rozdiel v teréne",
+            title:"",  // Empty
             subtitle: "Pomáhame tým, ktorí pomáhajú. Vytvárame platformu pre dôstojnú a dostupnú starostlivosť."
         },
         // About section
@@ -206,7 +205,7 @@ const translations = {
         },
         // Hero section
         hero: {
-            title: "Connecting and protecting those who make a difference",
+            title: "",  // Empty
             subtitle: "We help those who help others. Creating a platform for dignified and accessible care."
         },
         // About section
