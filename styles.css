@@ -828,6 +828,24 @@ nav {
     background-color: var(--muted-plum);
 }
 
+/* Ensure all member cards display properly */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.member-card {
+    display: block !important;
+}
+
+/* Fix for members 8-11 */
+.member-card:nth-child(n+8) {
+    display: block !important;
+    background-color: var(--white);
+    border-top-color: var(--soft-warm-rose);
+}
+
 .member-name {
     font-weight: 500;
     font-size: 1rem;
